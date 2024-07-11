@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    width: 250px;
+    margin-left: -250px;
+    transition: margin 0.25s ease-out;
+    background-color: #800080;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#page-content-wrapper {
+    width: 100%;
+}
+
+.sidebar-heading {
+    font-size: 1.2rem;
+    background: #800080;
+    padding: 0.75rem 1rem;
+    text-align: center;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.list-group-item.active {
+    background-color: #800080;
+    color: white;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(50% - 20px);
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.profile-item h3 {
+    margin-top: 0;
+    color: #800080;
+}
+
+.profile-item p {
+    margin: 5px 0;
+}
+
+.navbar .btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+}
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.company-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.user-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
