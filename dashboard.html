@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/dashboard-styles.css">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-dark border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center text-white py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">AutoHealthTracker</div>
+            <div class="list-group list-group-flush my-3">
+                <a href="#dashboard" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">Dashboard</a>
+                <a href="#drivers" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">Drivers</a>
+                <a href="#profile" class="list-group-item list-group-item-action bg-transparent second-text fw-bold active">Profile</a>
+                <a href="#settings" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">Settings</a>
+                <a href="#signout" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold">Sign Out</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                <div class="navbar-center">
+                    <img src="./assets/images/5cb6e626-abff-4e8e-b3b0-ea89643f0cc2.jfif" alt="Company Icon" class="company-icon mr-2">
+                    <span class="navbar-brand mb-0 h1">Auto Health Tracker</span>
+                </div>
+                <div class="ml-auto d-flex align-items-center">
+                    <span class="mr-2">John Doe</span>
+                    <img src="./assets/images/istockphoto-607985882-612x612.jpg" alt="User Photo" class="user-photo">
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <h1 class="mt-4">Admin Profile</h1>
+                <div class="profile-container">
+                    <div class="profile-item">
+                        <h3>Admin Name</h3>
+                        <p>John Doe</p>
+                    </div>
+                    <div class="profile-item">
+                        <h3>Email</h3>
+                        <p>admin@example.com</p>
+                    </div>
+                    <div class="profile-item">
+                        <h3>Number of Vehicles</h3>
+                        <p>3</p>
+                    </div>
+                    <div class="profile-item">
+                        <h3>Date of Registration</h3>
+                        <p>01/01/2022</p>
+                    </div>
+                    <div class="profile-item">
+                        <h3>Role</h3>
+                        <p>Administrator</p>
+                    </div>
+                    <div class="profile-item">
+                        <h3>Last Login</h3>
+                        <p>07/11/2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+</html>
